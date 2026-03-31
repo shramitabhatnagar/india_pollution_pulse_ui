@@ -2,24 +2,23 @@
 
 **A Real-Time Air Quality Monitoring Dashboard for India**
 
-A beautiful, interactive, and professionally designed web dashboard that visualizes live air pollution data across India. It shows real-time AQI, pollutant levels on a 3D map, and provides powerful analytical insights — all built with Streamlit and deployed on Azure.
+![Dashboard Preview](https://via.placeholder.com/800x400/0a0a0a/bb86fc?text=India+Pollution+Pulse)
 
-![Dashboard Preview](https://pollutionui-hvckfzekfvfyhqcw.canadacentral-01.azurewebsites.net/)
+A beautiful, interactive, and professional web dashboard that visualizes **live air pollution data** across India using 3D maps, AQI calculations, and powerful analytics.
 
-
+**Live Dashboard:** [https://pollutionui-hvckfzekfvfyhqcw.canadacentral-01.azurewebsites.net/](https://pollutionui-hvckfzekfvfyhqcw.canadacentral-01.azurewebsites.net/)
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-- **Live 3D Pollution Map** – 3D columns showing pollution intensity across India
-- **AQI Map** – Color-coded Air Quality Index (Green → Dark Red) using official CPCB standards
-- **Interactive Filters** – Filter by pollutant, region, state, and top N stations
-- **Real-time AQI Calculation** – Uses official CPCB breakpoints and "Worst Pollutant" method
-- **Multiple Analytical Views** – Time trends, regional comparison, hourly patterns, and KPIs
-- **Dark Professional Theme** – Modern cyberpunk-style UI
-- **Auto Refresh** – Data refreshes automatically every 5 minutes
-- **Modular & Scalable Code** – Clean component-based architecture
+- 3D interactive pollution map of India
+- Official CPCB AQI calculation with color coding
+- 7 professional tabs with charts and insights
+- Real-time filters (Pollutant, Region, State, Top N)
+- Dark modern theme
+- Auto-refresh every 5 minutes
+- Fully modular & maintainable code
 
 ---
 
@@ -27,34 +26,21 @@ A beautiful, interactive, and professionally designed web dashboard that visuali
 
 ```bash
 india-pollution-pulse/
-├── app.py                          # Main Streamlit application
-├── requirements.txt                # Python dependencies
+├── app.py                          # Main Streamlit app
+├── requirements.txt                # All dependencies
 ├── README.md                       # This file
-└── components/                     # Modular components (recommended structure)
+└── components/                     # Clean modular architecture
     ├── __init__.py
-    ├── data_loader.py              # Database connection & data fetching
-    ├── aqi_utils.py                # AQI calculation & color logic
-    ├── regions.py                  # Region mapping (North, South, etc.)
+    ├── data_loader.py              # Azure SQL connection
+    ├── aqi_utils.py                # AQI logic & breakpoints
+    ├── regions.py                  # North/South/East etc.
     ├── tab1_map.py                 # All Pollutants Map
     ├── tab2_aqi_map.py             # AQI Map
-    ├── tab3_analytics.py           # Analytics & Raw Data
-    ├── tab4_time_trends.py         # Time Series Trends
-    ├── tab5_regional_comparison.py # Regional & State Comparison
-    ├── tab6_hourly_patterns.py     # Hourly & Daily Patterns
-    └── tab7_kpi_overview.py        # AQI Overview & Gauge
-
-🛠️ Technologies Used
-
-Technology,Purpose
-Streamlit,Dashboard framework
-Pydeck,3D interactive maps
-Plotly,Professional charts & gauge
-Pandas,Data processing
-pyodbc,Azure SQL Database connectivity
-Azure SQL Database,Data storage
-Azure Functions,Hourly ETL pipeline
-Azure Web App,Production hosting
-
+    ├── tab3_analytics.py           # Top stations + raw data
+    ├── tab4_time_trends.py         # Time series
+    ├── tab5_regional_comparison.py # Regional & state bars
+    ├── tab6_hourly_patterns.py     # Hourly heatmap
+    └── tab7_kpi_overview.py        # National AQI gauge
 
 🚀 How to Run Locally
 Prerequisites
