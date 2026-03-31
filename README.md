@@ -2,7 +2,6 @@
 
 **A Real-Time Air Quality Monitoring Dashboard for India**
 
-![Dashboard Preview](https://via.placeholder.com/800x400/0a0a0a/bb86fc?text=India+Pollution+Pulse)
 
 A beautiful, interactive, and professional web dashboard that visualizes **live air pollution data** across India using 3D maps, AQI calculations, and powerful analytics.
 
