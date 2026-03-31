@@ -1,1 +1,1 @@
-# india_pollution_pulse_ui
+# Streamlit Application for India Live Pollution Analysis
